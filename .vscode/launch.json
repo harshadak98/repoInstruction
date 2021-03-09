@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            // Specify path to the downloaded local adapter(for nodejs) file
+            "program": "D:/simple/repoInstruction/introfolder/lambda/local-debugger.js",
+            "args": [
+                // port number on your local host where the alexa requests will be routed to
+                "--portNumber", "3001",
+                // name of your nodejs main skill file
+                "--skillEntryFile", "D:/simple/repoInstruction/introfolder/lambda/index.js",
+                // name of your lambda handler
+                "--lambdaHandler", "handler"
+            ],
+        }
+    ]
+}
